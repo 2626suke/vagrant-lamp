@@ -1,4 +1,4 @@
-# 構成
+## 構成
 + Linux
 + Apache
 + PHP
@@ -6,7 +6,7 @@
 + phpMyAdmin
 + Composer
 
-# 手順
+## 手順
 + VirtulBoxのインストール
 + Vagrantのインストール
 + git clone https://github.com/2626suke/vagrant-lamp.git
