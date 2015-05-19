@@ -1,10 +1,13 @@
 ## 構成
-+ Linux
-+ Apache
-+ PHP
-+ MySQL
-+ phpMyAdmin
-+ Composer
+|ソフトウェア|バージョン|
+|:--|:-:|
+|CentOS|6.5|
+|Apache|2.2.15|
+|PHP|5.6.9|
+|MySQL|5.6.24|
+|phpMyAdmin|4.4.7|
+|Composer|1.0-dev|
+|Xdebug|2.3.2|
 
 ## 手順
 + VirtulBoxのインストール
