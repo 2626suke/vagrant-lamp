@@ -21,3 +21,10 @@
 |起動|vagrant up|
 |停止|vagrant halt|
 |破棄|vagrant destroy|
+
+#### SSH接続
+|項目|値|
+|:--|:--|
+|ホスト|33.33.33.10|
+|ユーザー名|vagrant|
+|パスワード|vagrant|
