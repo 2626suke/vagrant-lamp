@@ -28,3 +28,10 @@
 |ホスト|33.33.33.10|
 |ユーザー名|vagrant|
 |パスワード|vagrant|
+
+#### MySQL
+|項目|値|
+|:--|:--|
+|ユーザー名|root|
+|パスワード|pass|
+|phpMyAdmin|/phpmyadmin|
