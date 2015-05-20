@@ -25,18 +25,16 @@ git clone https://github.com/2626suke/vagrant-lamp.git
 ```
 
 ## 使用法
-#### 起動
+#### 起動/停止/破棄
 ```
 vagrant up
-```
-
-#### 停止
-```
 vagrant halt
-```
-
-#### 破棄
-```
 vagrant destroy
 ```
 
+#### SSH
+|項目|値|
+|:--|:-:|
+|ホスト|33.33.33.10|
+|ユーザー名|vagrant|
+|パスワード|vagrant|
