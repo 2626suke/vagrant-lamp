@@ -10,31 +10,14 @@
 |Xdebug|2.3.2|
 
 ## インストール方法
-#### VirtulBoxのインストール
-https://www.virtualbox.org/wiki/Downloads
-
-#### Vagrantのインストール
-http://www.vagrantup.com/downloads.html
-```
-vagrant -v
-```
-
-#### Vagrant設定ファイルのインストール
-```
-git clone https://github.com/2626suke/vagrant-lamp.git
-```
+1. VirtulBoxのインストール
+1. Vagrantのインストール
+1. 本リポジトリをインストール
 
 ## 使用法
-#### 起動/停止/破棄
-```
-vagrant up
-vagrant halt
-vagrant destroy
-```
-
-#### SSH
-|項目|値|
+#### 仮想環境操作
+|操作|方法|
 |:--|:-:|
-|ホスト|33.33.33.10|
-|ユーザー名|vagrant|
-|パスワード|vagrant|
+|起動|vagrant up|
+|停止|vagrant halt|
+|破棄|vagrant destroy|
