@@ -10,8 +10,18 @@
 |Xdebug|2.3.2|
 
 ## 手順
-1. VirtulBoxのインストール
-1. Vagrantのインストール
-1. git clone https://github.com/2626suke/vagrant-lamp.git
-1. cd /vagrant
-1. vagrant up
+### VirtulBoxのインストール
+https://www.virtualbox.org/wiki/Downloads
+
+### Vagrantのインストール
+http://www.vagrantup.com/downloads.html
+```
+vagrant -v
+```
+
+### Vagrant設定ファイルのインストール
+```
+git clone https://github.com/2626suke/vagrant-lamp.git
+```
+
+###
