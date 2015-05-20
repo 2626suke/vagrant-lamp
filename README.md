@@ -38,6 +38,6 @@
 #### phpMyAdmin
 |項目|値|
 |:--|:--|
+|URL|/phpmyadmin|
 |ユーザー名|root|
 |パスワード|pass|
-|URL|/phpmyadmin|
