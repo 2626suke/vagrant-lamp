@@ -3,7 +3,8 @@ Vagrant.configure(2) do |config|
   config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box"
   config.vm.hostname = "vb.local"
   config.vm.network "private_network", ip: "33.33.33.10"
-  config.vm.synced_folder "../", "/var/www/html"
+  config.vm.synced_folder "./", "/vagrant", disabled: true
+  config.vm.synced_folder "../", "/vagrant"
   config.vm.provision :shell, :inline => <<-EOT
     # yum
     rpm -Uvh http://ftp.iij.ad.jp/pub/linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
