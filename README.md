@@ -34,4 +34,8 @@
 |:--|:--|
 |ユーザー名|root|
 |パスワード|pass|
-|phpMyAdmin|/phpmyadmin|
+
+#### phpMyAdmin
+|ユーザー名|root|
+|パスワード|pass|
+|URL|/phpmyadmin|
