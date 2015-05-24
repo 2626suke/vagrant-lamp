@@ -3,8 +3,6 @@ Vagrant.configure(2) do |config|
   config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box"
   config.vm.hostname = "vb.local"
   config.vm.network "private_network", ip: "33.33.33.10"
-  config.vm.synced_folder "./", "/vagrant", disabled: true
-  config.vm.synced_folder "../", "/share"
   config.vm.provision :shell, :inline => <<-EOT
     # yum
     rpm -Uvh http://ftp.iij.ad.jp/pub/linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
@@ -28,15 +26,15 @@ Vagrant.configure(2) do |config|
     mysql -u root -e "SET PASSWORD FOR root@localhost=PASSWORD('pass');"
     # phpmyadmin
     yum -y --enablerepo=remi,remi-php56 install phpMyAdmin
-    cp /share/vagrant/config/phpMyAdmin.conf /etc/httpd/conf.d/phpMyAdmin.conf
+    cp /vagrant/provision/phpMyAdmin.conf /etc/httpd/conf.d/phpMyAdmin.conf
     # php
     yum -y --enablerepo=remi-php56 install php php-mcrypt php-mbstring php-pdo php-mysqlnd php-gd php-pecl-xdebug
-    cp /share/vagrant/config/php.ini /etc/php.ini
-    cp /share/vagrant/config/15-xdebug.ini /etc/php.d/15-xdebug.ini
+    cp /vagrant/provision/php.ini /etc/php.ini
+    cp /vagrant/provision/15-xdebug.ini /etc/php.d/15-xdebug.ini
     # apache
     yum -y install httpd
     chkconfig httpd on
-    cp /share/vagrant/config/httpd.conf /etc/httpd/conf/httpd.conf
+    cp /vagrant/provision/httpd.conf /etc/httpd/conf/httpd.conf
     service httpd start
     # composer
     curl -sS https://getcomposer.org/installer | php
